@@ -21,9 +21,6 @@ import (
 // are removed, e.g. "don't" becomes "dont".
 // You should use `checkError` to handle potential errors.
 func topWords(path string, numWords int, charThreshold int) []WordCount {
-	// TODO: implement me
-	// HINT: You may find the `strings.Fields` and `strings.ToLower` functions helpful
-	// HINT: To keep only alphanumeric characters, use the regex "[^0-9a-zA-Z]+"
 	content, err := os.ReadFile(path)
 	if err != nil {
 		log.Fatal(err)
